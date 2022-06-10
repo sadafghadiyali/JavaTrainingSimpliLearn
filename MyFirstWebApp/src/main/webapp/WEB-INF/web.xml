@@ -126,4 +126,23 @@
   <listener>
     <listener-class>com.sessionDemo.Listeners.myListener</listener-class>
   </listener>
+  <servlet>
+    <description></description>
+    <display-name>RegisterServlet</display-name>
+    <servlet-name>RegisterServlet</servlet-name>
+    <servlet-class>com.filterDemo.RegisterServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>RegisterServlet</servlet-name>
+    <url-pattern>/RegisterServlet</url-pattern>
+  </servlet-mapping>
+  <filter>
+    <display-name>ValidatePanFilter</display-name>
+    <filter-name>ValidatePanFilter</filter-name>
+    <filter-class>com.filterDemo.filters.ValidatePanFilter</filter-class>
+  </filter>
+  <filter-mapping>
+    <filter-name>ValidatePanFilter</filter-name>
+    <servlet-name>RegisterServlet</servlet-name>
+  </filter-mapping>
 </web-app>
