@@ -10,12 +10,12 @@
     <welcome-file>default.htm</welcome-file>
   </welcome-file-list>
   <context-param>
-  	<param-name>driver</param-name>
-  	<param-value>com.mysql.jdbc.Driver</param-value>
+    <param-name>driver</param-name>
+    <param-value>com.mysql.jdbc.Driver</param-value>
   </context-param>
   <context-param>
-  	<param-name>url</param-name>
-  	<param-value>jdbc.mysql.localhost</param-value>
+    <param-name>url</param-name>
+    <param-value>jdbc.mysql.localhost</param-value>
   </context-param>
   <servlet>
     <servlet-name>myServlet</servlet-name>
@@ -31,12 +31,12 @@
     <servlet-name>Servlet1</servlet-name>
     <servlet-class>com.Servlet1</servlet-class>
     <init-param>
-    	<param-name>sqlQuery</param-name>
-    	<param-value>select * from employees</param-value>
+      <param-name>sqlQuery</param-name>
+      <param-value>select * from employees</param-value>
     </init-param>
     <init-param>
-    	<param-name>message</param-name>
-    	<param-value>Hello from Message attribute in Servlet1</param-value>
+      <param-name>message</param-name>
+      <param-value>Hello from Message attribute in Servlet1</param-value>
     </init-param>
   </servlet>
   <servlet-mapping>
@@ -52,5 +52,25 @@
   <servlet-mapping>
     <servlet-name>Servlet2</servlet-name>
     <url-pattern>/Servlet2</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <description></description>
+    <display-name>LoginController</display-name>
+    <servlet-name>LoginController</servlet-name>
+    <servlet-class>com.login.LoginController</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>LoginController</servlet-name>
+    <url-pattern>/LoginController</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <description></description>
+    <display-name>SuccessServlet</display-name>
+    <servlet-name>SuccessServlet</servlet-name>
+    <servlet-class>com.login.SuccessServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>SuccessServlet</servlet-name>
+    <url-pattern>/SuccessServlet</url-pattern>
   </servlet-mapping>
 </web-app>

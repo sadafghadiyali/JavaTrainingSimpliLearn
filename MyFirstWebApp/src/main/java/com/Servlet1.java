@@ -31,7 +31,7 @@ public class Servlet1 extends HttpServlet {
 		PrintWriter out = response.getWriter();
 		ServletConfig config = getServletConfig();
 		out.print("<br /><h1>Accessing content from Config of Servlet1</h1>");
-		out.print("<br />sql = "+config.getInitParameter("sqlQuery"));
+		out.print("<br />sql = <b>"+config.getInitParameter("sqlQuery")+"</b>");
 		out.print("<br />message = "+config.getInitParameter("message"));
 		
 		ServletContext application = getServletContext();
