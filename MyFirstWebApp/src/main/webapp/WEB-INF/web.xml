@@ -103,4 +103,27 @@
     <servlet-name>SummaryServlet</servlet-name>
     <url-pattern>/SummaryServlet</url-pattern>
   </servlet-mapping>
+  <servlet>
+    <description></description>
+    <display-name>TestServlet</display-name>
+    <servlet-name>TestServlet</servlet-name>
+    <servlet-class>com.sessionDemo.TestServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>TestServlet</servlet-name>
+    <url-pattern>/TestServlet</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <description></description>
+    <display-name>myListener</display-name>
+    <servlet-name>myListener</servlet-name>
+    <servlet-class>com.sessionDemo.Listeners.myListener</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>myListener</servlet-name>
+    <url-pattern>/myListener</url-pattern>
+  </servlet-mapping>
+  <listener>
+    <listener-class>com.sessionDemo.Listeners.myListener</listener-class>
+  </listener>
 </web-app>
