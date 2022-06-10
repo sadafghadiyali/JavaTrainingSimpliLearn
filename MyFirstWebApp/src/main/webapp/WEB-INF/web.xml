@@ -73,4 +73,34 @@
     <servlet-name>SuccessServlet</servlet-name>
     <url-pattern>/SuccessServlet</url-pattern>
   </servlet-mapping>
+  <servlet>
+    <description></description>
+    <display-name>FirstServlet</display-name>
+    <servlet-name>FirstServlet</servlet-name>
+    <servlet-class>com.session.FirstServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>FirstServlet</servlet-name>
+    <url-pattern>/FirstServlet</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <description></description>
+    <display-name>SecondServlet</display-name>
+    <servlet-name>SecondServlet</servlet-name>
+    <servlet-class>com.session.SecondServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>SecondServlet</servlet-name>
+    <url-pattern>/SecondServlet</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <description></description>
+    <display-name>SummaryServlet</display-name>
+    <servlet-name>SummaryServlet</servlet-name>
+    <servlet-class>com.session.SummaryServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>SummaryServlet</servlet-name>
+    <url-pattern>/SummaryServlet</url-pattern>
+  </servlet-mapping>
 </web-app>
