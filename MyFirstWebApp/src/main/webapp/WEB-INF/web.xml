@@ -145,4 +145,14 @@
     <filter-name>ValidatePanFilter</filter-name>
     <servlet-name>RegisterServlet</servlet-name>
   </filter-mapping>
+  <servlet>
+    <description></description>
+    <display-name>RegisterJSPServlet</display-name>
+    <servlet-name>RegisterJSPServlet</servlet-name>
+    <servlet-class>com.jspDemo.controller.RegisterJSPServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>RegisterJSPServlet</servlet-name>
+    <url-pattern>/RegisterJSPServlet</url-pattern>
+  </servlet-mapping>
 </web-app>
