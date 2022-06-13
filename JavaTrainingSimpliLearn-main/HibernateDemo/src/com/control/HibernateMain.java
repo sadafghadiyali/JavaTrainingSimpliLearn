@@ -12,7 +12,6 @@ public class HibernateMain {
 	
 	public static void main(String[] args) {
 		
-		Session session = null;
 		
 		try {
 			Configuration configuration = new Configuration().configure();
@@ -22,7 +21,7 @@ public class HibernateMain {
 			
 			SessionFactory sessionFactory = configuration.buildSessionFactory(builder.build());
 			
-			session = sessionFactory.openSession();
+			Session session = sessionFactory.openSession();
 			Transaction transaction = session.beginTransaction();
 //================Insert===============			
 			//Player p1=new Player(1,"Virat","team1",23);
@@ -52,8 +51,6 @@ public class HibernateMain {
 			session.close();
 		}catch(Exception e) {
 			System.out.println(e.getMessage());
-		}finally {
-			session.close();
 		}
 		
 		
